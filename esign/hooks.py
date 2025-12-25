@@ -8,7 +8,18 @@ app_license = "mit"
 # Apps
 # ------------------
 
-# required_apps = []
+
+required_apps = ["erpnext"]
+
+doctype_js = {
+    "Quotation" : "public/js/quotation.js"
+    }
+
+fixtures = [
+    {"dt": "Custom Field", "filters": [["module", "=", "Esignatures"]]},
+    {"dt": "Property Setter", "filters": [["module", "=", "Esignatures"]]},
+    {"dt": "Role", "filters": [["name", "=", "e-signature"]]}
+]
 
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [

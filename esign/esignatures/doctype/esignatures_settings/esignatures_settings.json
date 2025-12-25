@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-25 09:50:38.118371",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "esignature_api_token",
+  "column_break_mytr",
+  "placeholders_section",
+  "placeholder_mappings"
+ ],
+ "fields": [
+  {
+   "fieldname": "esignature_api_token",
+   "fieldtype": "Password",
+   "label": "eSignature Api Token"
+  },
+  {
+   "fieldname": "placeholders_section",
+   "fieldtype": "Section Break",
+   "label": "Placeholders"
+  },
+  {
+   "fieldname": "placeholder_mappings",
+   "fieldtype": "Table",
+   "label": "Placeholder Mappings",
+   "options": "eSignature Placeholder Mapping"
+  },
+  {
+   "fieldname": "column_break_mytr",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-12-25 14:58:39.563119",
+ "modified_by": "Administrator",
+ "module": "Esignatures",
+ "name": "eSignatures Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

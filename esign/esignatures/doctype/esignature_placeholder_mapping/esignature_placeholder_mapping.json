@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-25 11:57:27.404822",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "frappe_field",
+  "column_break_cict",
+  "esignature_placeholder"
+ ],
+ "fields": [
+  {
+   "fieldname": "frappe_field",
+   "fieldtype": "Data",
+   "label": "Frappe Field Name"
+  },
+  {
+   "fieldname": "column_break_cict",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "esignature_placeholder",
+   "fieldtype": "Data",
+   "label": "eSignatures Placeholder Key"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-25 12:16:56.027180",
+ "modified_by": "Administrator",
+ "module": "Esignatures",
+ "name": "eSignature Placeholder Mapping",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
