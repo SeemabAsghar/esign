@@ -32,17 +32,17 @@ Pre-commit is configured to use the following tools for checking and formatting 
 
 mit
 
-### Setup Guide
+# Setup Guide
 
-# Create free account
+## Create free account
 → https://esignatures.io/signup
-# Get API Token
+## Get API Token
 → Dashboard → Automation & API → Copy "Your Secret token"
-# ERPNext Setup
+## ERPNext Setup
 → Go to eSignatures Settings
 → Paste API token (Password field)
 → Add Placeholder Mappings (e.g., name → quotation_id, grand_total → total_amount)
-# Create Template on esignatures.io
+## Create Template on esignatures.io
 → Templates → New Template
 → Add placeholders like {{quotation_id}}, {{signer_name}}, etc. (match your mappings)
 → Add signature field
