@@ -40,8 +40,6 @@ def send_for_signature(quotation_id, signer_name, signer_email):
     quotation = frappe.get_doc("Quotation", quotation_id)
     customer_name = quotation.customer_name or signer_name
     customer_email = quotation.contact_email or signer_email
-    company = quotation.company
-    template_raw = quotation.custom_esignature_template
     template_id = quotation.custom_esignature_template
 
     if not template_id:
