@@ -8,9 +8,10 @@ from frappe.core.doctype.communication.email import make
 
 def get_esignature_token():
     settings = frappe.get_single("eSignatures Settings")
-    api_token = settings.get_password("esignature_api_token",raise_exception=False)
-    if not api_token:
-        frappe.throw("E-signature API token not configured.")
+    api_token = settings.get_password("esignature_api_token", raise_exception=False)
+    
+    # if not api_token:
+    #     frappe.throw("E-signature API token not configured.")
     return api_token
 
 
@@ -33,7 +34,9 @@ def get_esignature_templates():
 @frappe.whitelist()
 def send_for_signature(quotation_id, signer_name, signer_email):
     api_token = get_esignature_token()
-
+    if not api_token:
+        frappe.throw("E-signature API token not configured. Please set it in eSignatures Settings.")
+        
     quotation = frappe.get_doc("Quotation", quotation_id)
     customer_name = quotation.customer_name or signer_name
     customer_email = quotation.contact_email or signer_email
