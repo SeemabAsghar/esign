@@ -8,7 +8,7 @@ from frappe.core.doctype.communication.email import make
 
 def get_esignature_token():
     settings = frappe.get_single("eSignatures Settings")
-    api_token = settings.get_password("esignature_api_token")
+    api_token = settings.get_password("esignature_api_token",raise_exception=False)
     if not api_token:
         frappe.throw("E-signature API token not configured.")
     return api_token
@@ -17,12 +17,14 @@ def get_esignature_token():
 @frappe.whitelist()
 def get_esignature_templates():
     api_token = get_esignature_token()
+    if not api_token:
+        return []
 
     url = f"https://esignatures.com/api/templates?token={api_token}"
     response = requests.get(url)
 
     if response.status_code != 200:
-        frappe.throw(f"Failed to fetch templates: {response.text}")
+        return []
 
     templates = response.json().get("data", [])
     return [{"label": t["title"], "value": t["template_id"]} for t in templates]
