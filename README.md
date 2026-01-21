@@ -2,7 +2,7 @@
 
 Esignatures Integration
 
-### Server Tests CI ✅
+### Server Tests
 ![Server Tests](https://github.com/SeemabAsghar/esign/actions/workflows/ci.yml/badge.svg)
 ![Server Tests](https://github.com/SeemabAsghar/esign/actions/workflows/linter.yml/badge.svg)
 
