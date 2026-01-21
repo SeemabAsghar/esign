@@ -203,7 +203,7 @@ def esignature_webhook():
             subject=f"Quotation {quotation_name} Signed",
             content=message,
             recipients=[user],
-            communication_type="Notification",
+            communication_type="Automated Message",
             send_email=True
         )
 
