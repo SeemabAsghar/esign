@@ -18,9 +18,10 @@ bench --site your-site.com install-app esign
 
 ### License
 
-mit
+[MIT](https://opensource.org/licenses/MIT)
 
-# Setup Guide
+# Getting Started
+Follow these steps to quickly set up Esignatures in ERPNext:
 
 ## Create free account
 → https://esignatures.io/signup
@@ -31,7 +32,8 @@ mit
 
 → Paste API token (Password field)
 
-→ Add Placeholder Mappings according to your field(e.g., name → quotation_id, grand_total → total_amount)
+→ Add placeholders like {{quotation_id}}, {{signer_name}}, etc. 
+  (these should match the fields you mapped in ERPNext)
 
 ## Create Template on esignatures.io
 → Templates → New Template
@@ -45,3 +47,4 @@ mit
 → "Your default website webhook" 
 
 → https://your-site.com/api/method/esign.api.esignature_webhook
+⚠️ Note: Make sure to replace your-site.com with your actual ERPNext site URL.
