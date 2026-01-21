@@ -1,7 +1,7 @@
 [project]
 name = "esign"
 authors = [
-    { name = "Seemab Asghar", email = "info@zikpro.com"}
+    { name = "Zikpro Ltd", email = "seemab@zikpro.com"}
 ]
 description = "Esignatures Integration"
 requires-python = ">=3.10"
