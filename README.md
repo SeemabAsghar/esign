@@ -28,13 +28,20 @@ mit
 → Dashboard → Automation & API → Copy "Your Secret token"
 ## ERPNext Setup
 → Go to eSignatures Settings
+
 → Paste API token (Password field)
-→ Add Placeholder Mappings (e.g., name → quotation_id, grand_total → total_amount)
+
+→ Add Placeholder Mappings according to your field(e.g., name → quotation_id, grand_total → total_amount)
+
 ## Create Template on esignatures.io
 → Templates → New Template
-→ Add placeholders like {{quotation_id}}, {{signer_name}}, etc. (match your mappings)
-→ Add signature field
+
+→ Add placeholders like {{quotation_id}}, {{signer_name}}, etc. (match your mappings with erpnext fields)
+
 # Set Webhook
+
 → esignatures.io Dashboard → Automation & API
+
 → "Your default website webhook" 
+
 → https://your-site.com/api/method/esign.api.esignature_webhook
