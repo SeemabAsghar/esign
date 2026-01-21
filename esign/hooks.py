@@ -1,8 +1,8 @@
 app_name = "esign"
 app_title = "Esignatures"
-app_publisher = "Seemab Asghar"
+app_publisher = "Zikpro Ltd"
 app_description = "Esignatures Integration"
-app_email = "info@zikpro.com"
+app_email = "seemab@zikpro.com"
 app_license = "mit"
 
 # Apps
