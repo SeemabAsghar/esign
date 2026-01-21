@@ -2,14 +2,18 @@
 
 Esignatures Integration
 
+### Server Tests CI ✅
+![Server Tests](https://github.com/SeemabAsghar/esign/actions/workflows/ci.yml/badge.svg)
+![Server Tests](https://github.com/SeemabAsghar/esign/actions/workflows/linter.yml/badge.svg)
+
 ### Installation
 
 You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 
 ```bash
 cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch develop
-bench install-app esign
+bench get-app esign https://github.com/SeemabAsghar/esign
+bench --site your-site.com install-app esign
 ```
 
 ### Contributing
