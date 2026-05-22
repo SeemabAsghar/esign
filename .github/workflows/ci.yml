@@ -106,4 +106,4 @@ jobs:
           bench --site test_site set-config allow_tests true
           bench --site test_site run-tests --app esign
         env:
-          TYPE: server
+          TYPE: serverd
